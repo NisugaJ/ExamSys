@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel = "stylesheet" href="../CSS/Register.css" type="text/css">
+<link rel = "stylesheet" href="../CSS/Home.css" type="text/css">
+<script src="js1.js" > </script>
+<title>
+Registration
+</title>
+</head>
+<header>
+<ul id="menubar">
+<div id="menu">
+<li class="button_logo" ><a href="Home.php" id="logo">Mr.MCQ</a></li>
+<li class="button"><a href="Home.php">Home</a></li>
+<li class="button"><a href="Pastpapers.php">Past papers</a></li>
+<li class="button"><a href="Help.php">Help</a></li>
+<li class="button"><a href="ContactUs.php">Contact us</a></li>
+</div>
+<div id="account">
+<li class="button"><a href="Register.htm" >Register</a></li>
+<li class="button"><a href="Login.php" >Login</a></li>
+</div>
+</ul>
+</header>
+<body background="../images/light-color-background-images-for-websites-4.jpg">
+
+<div id="form_layout" >
+<br/>
+<h2 align="center">Registration</h2>
+<form name="regform" onSubmit="return confirmPWD()"  action="../PHP/register.php" method="POST">
+	<p id="head"></p> <br>
+  	First Name:          <br/><input type="text" name ="First_Name" pattern="[a-zA-Z]{2,30}" title="Use Only Alphabets" required> 
+    <p id="p1"></p> 
+    Last Name:           <br/><input type="text" name ="Last_Name" pattern="[a-zA-Z]{2,30}" title="Use Only Alphabets" required><br/> 
+    <br/>
+    User Name:           <br/><input type="text" name ="User_Name" pattern="[0-9a-zA-Z]{3,15}" min="3" max="15" required><br/> 
+     <p id="p2"></p>
+    E-Mail:              <br/><input type="email" name ="E-Mail" required><br/> 
+    <p id="p3"></p>
+    Password:            <br/><input type="password" name="Password"  pattern="^(?=.*\d)(?=.*[a-z])(?!.*\s).*$" title="Please include at least 1 lowercase character, and 1 number."    required  >
+    <p id="p4"></p> 
+    Confirm Password:    <br/><input type="password" name="ConfirmPassword"   pattern="^(?=.*\d)(?=.*[a-z])(?!.*\s).*$" title="Please include at least 				   1 lowercase character, and 1 number." required>
+<!--	<br/>
+     Contacts<br/><input type="text" placeholder="Enter your phone number" name="con1" required>
+     <br/><input type="text" placeholder="Additional Contact" name="con2">  -->
+    <br/><br/>
+ 	<input type = "radio" name="type" value="t" required/>I am a Teacher
+    <input type = "radio" name="type"  value="s" required/>I am a Student<br/><br/>    
+    
+    <input type="submit" name="register" value="Register" >
+   </form>
+<br/>
+</div>
+<br/>
+
+</body>
+<footer>
+
+<a align="center" href="AboutUs.htm">About Us |</a>
+<a href="SupportUs.htm">Support |</a>
+<a href="PrivacyPolicy.htm">Privacy Policy</a>
+
+<p id="footer" align="center" style="font-size:15px">Mr.MCQ	|	All Rights Reserved</p>
+</footer>
+
+</html>
