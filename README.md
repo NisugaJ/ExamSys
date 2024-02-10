@@ -4,4 +4,4 @@ Mr.MCQ is an online examination system which is developed for MCQ-type questions
 This system is well-focused for academic MCQ exams. Teachers can make two paper types (exam paper & model paper). Teachers can view all the results of a finished exam at any time. Each student can view the results of the finished exams on their student profile. 
 A teacher can make model papers and save them in the model papers section. Students can access model papers at any time. The system provides facilities to view or practice model papers which will help the students to do the exams well.
 
- ```This was one of my first-year university projects of BSc Software Engineering at SLIIT```
+ ```First-year university project```
